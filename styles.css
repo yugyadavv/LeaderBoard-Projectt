@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.input-container input, .input-container button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.input-container button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.input-container button:hover {
+    background-color: #218838;
+}
+
+.leaderboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.player-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #90ee90;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    flex-wrap: wrap;
+}
+
+.player-card div {
+    flex: 1;
+    margin: 5px;
+}
+
+.player-card .actions {
+    display: flex;
+    align-items: center;
+}
+
+.player-card button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+.player-card button:hover {
+    background-color: #0056b3;
+}
+
+.player-card .delete {
+    background-color: #dc3545;
+}
+
+.player-card .delete:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+    .input-container {
+        flex-direction: column;
+    }
+
+    .player-card {
+        flex-direction: column;
+    }
+
+    .player-card div {
+        margin: 5px 0;
+    }
+
+    .player-card .actions {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .input-container input, .input-container button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .player-card {
+        padding: 5px;
+    }
+
+    .player-card button {
+        margin: 5px 0;
+    }
+}
